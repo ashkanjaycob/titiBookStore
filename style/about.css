@@ -1,0 +1,59 @@
+.about-us-content {
+    font-family: kara, yekan;
+    direction: rtl;
+}
+
+#about-h2 {
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.pic-layer img {
+    border-radius: 10px;
+    filter: drop-shadow(4px 4px 2px gray);
+}
+
+.au-card img {
+    border-radius: 14px;
+}
+
+.about-us-cards a {
+    text-decoration: none;
+    color: black;
+}
+
+.about-us-cards {
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.au-card i {
+    padding: 20px 0;
+}
+
+
+
+
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .about-us-cards {
+        flex-flow: row;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}

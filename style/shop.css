@@ -1,0 +1,106 @@
+.filter-btn {
+    font-family: kara;
+    background: rgba(77, 71, 71, 0.103);
+    border: none;
+    border-radius: 10px;
+    font-size: 0.6rem;
+}
+
+.shop-main-content {
+    background: rgba(77, 71, 71, 0.103);
+    border-radius: 10px;
+    font-family: kara;
+}
+
+.shop-side-content {
+    display: none;
+}
+
+.shop-main-text {
+    direction: rtl;
+}
+
+.shop-main-slider {
+    direction: rtl;
+}
+
+.shop-main-slider img {
+    border-radius: 10px;
+}
+
+.shop-main-slider a {
+    text-decoration: none;
+}
+
+.pagination {
+    font-family: kara;
+}
+
+
+.button-sh-slider {
+    background-color: #28c4ccb0 !important;
+
+}
+
+.page-link {
+    color: #28c4cc;
+}
+
+.list-group {
+    direction: rtl;
+    font-family: kara, yekan;
+}
+
+.breadcrump-navigation {
+    direction: rtl;
+    font-family: yekan, kara;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #28c4cc;
+}
+
+.author {
+    font-size: 0.8rem;
+}
+
+.modal {
+    direction: rtl;
+    font-family: yekan, kara;
+}
+
+.modal-content {
+    color: white;
+    font-family: kara;
+    background: rgba(105, 105, 105, 0.26);
+    backdrop-filter: blur(16px);
+    border-radius: 10px;
+    margin-top: 112px;
+}
+
+#list-gi-sort {
+    color: white !important;
+    background: transparent;
+}
+
+.list-group-item {
+    background: transparent;
+}
+
+
+
+/* buttons media screen  */
+
+@media screen and (min-width:405px) {
+    .filter-btn {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width:340px) {
+    .filter-btn {
+
+        font-size: 0.7rem;
+    }
+}

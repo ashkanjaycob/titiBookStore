@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="OwlCarousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2/css/bootstrap.css">
+    <link rel="stylesheet" href="style/font-awesome.min.css">
+    <link rel="stylesheet" href="style/shop.css">
+
+
+    <title>Tina's Book House</title>
+
+</head>
+
+<body class="container-sm">
+    <header id="header">
+
+        <div class="mobile-container container">
+            <nav class="navbar gr d-flex mt-3">
+                <div class="firstnav">
+                    <a href="#" id="login-text" type="button" class="btn" data-bs-toggle="modal"
+                        data-bs-target="#loginmodal">ورود و ثبت نام</a>
+                    <!-- first nav modals  -->
+                    <!-- Modal -->
+                    <div class="modal fade pt-2 pt-md-4" id="loginmodal" tabindex="-1" aria-labelledby="loginModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title"> <i class="fa fa-user-circle btn-outline-warning fs-2"></i> فرم ثبت نام و ورود به
+                                        حساب کاربری</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="modal-body">
+                                        <h5 >لطفا نام و نام خانوادگی خود را وارد نمایید</h5>
+                                        <div class="input-group mb-3 input-modal-bg">
+                                            <input type="text" class="form-control" placeholder="مثلا علی علوی ..."
+                                                aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                        <h5>لطفا شماره تلفن خود را وارد کنید</h5>
+                                        <input type="number" class="form-control" placeholder="مثلا 5656 654 0912"
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                        <br>
+                                        <button type="button" class="btn btn-outline-warning px-5">ثبت نام </button>
+                                        <hr>
+                                        <h5>حساب کاربری ندارید ؟ <button type="button" class="btn mx-2 btn-outline-warning"
+                                            data-bs-dismiss="modal">اینجا</button> کلیک کنید </h5>
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline-light"
+                                        data-bs-dismiss="modal">بستن</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--login modal finishes  -->
+                    <a href="#" ><i class="fa fa-user"  data-bs-toggle="modal"
+                        data-bs-target="#loginmodal" title="حساب کاربری"></i></a>
+                    <a href="#"><i class="fa fa-shopping-basket" title="سبد خرید "></i></a>
+                    <a href="#"><i class="fa fa-gift" title=" کد تخفیف"></i></a>
+                </div>
+                <div class="secondnav">
+                    <i class="fa fa-magnifying-glass"></i>
+                    <input type="text" placeholder="جست و جوی کتاب صوتی ، پادکست ، نویسنده">
+
+                </div>
+                <div class="thirdnav">
+                    <a href="#"><img src="Images/logo.svg" alt="لوگوی وبسایت">
+                </div></a>
+                <div class="fourthnav">
+                    <button type="submit" class="btn-T ">دانلود کاتالوگ</button>
+                </div>
+                <div class="fifthnav">
+                    <a id="bars" href="#" class="btn btn-light p-0 rou" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i
+                            class="fa fa-bars"></i></a>
+                    <ul>
+                        <li><a href="index.html"><i class="fa fa-home"></i>خانه</a></li>
+                        <li><a href="pages/shop.html"><i class="fa fa-book"></i>کتاب الکترونیکی</a></li>
+                        <li><a href="pages/podcast.html"><i class="fa fa-microphone"></i>پادکست</a></li>
+                        <li><a href="pages/aboutus.html"><i class="fa fa-newspaper"></i>رسالت ما</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- bars offcanvas menu mobile  -->
+
+        <div class="offcanvas rounded-3 offcanvas-end" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title fs-6" id="offcanvasExampleLabel">کتاب ‌بهترین دوست توست</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="mobile-menu-list text-end d-flex flex-column justify-content-center ">
+                    <ul>
+                        <li class="p-2"><a href="index.html" class="cnvs-menu">خانه</a></li>
+                        <li class="p-2"><a href="pages/shop.html" class="cnvs-menu">کتاب الکترونیکی</a></li>
+                        <li class="p-2"><a href="./pages/podcast.html" class="cnvs-menu">پادکست</a></li>
+                        <li class="p-2"><a href="./pages/aboutus.html" class="cnvs-menu">رسالت ما</a></li>
+                        <li class="p-2"><a href="#" class="cnvs-menu">گالری تصاویر</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- bars offcanvas  -->
+
+    </header>
+
+
+
+    <section id="slider-section">
+        <div class="mobile-container container">
+            <div class="slider shadow rounded-pill">
+                <div class="mySlides">
+                    <a href="pages/book.html"><img src="./Images/baner/Baner.webp">
+                </div>
+
+                <div class="mySlides ">
+                    <a href="pages/book.html"><img src="./Images/baner/Baner2.webp">
+                </div>
+
+                <div class="mySlides ">
+                    <a href="pages/book.html"></a><img src="./Images/baner/Baner3.webp">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section2">
+        <div class="mobile-container container">
+            <div class="shopsslider">
+                <div class="container">
+                    <h3 class="fs-4 float-end">پر فروش های هفته</h3>
+                    <h4 id="moretext" class="fs-6"> <a href="#"> بیشتر</a></h4>
+                    <br>
+                    <div class="owl-carousel owl-theme">
+                        <div class="item py-2"> <img src="Images/book Cover/book8.jpg" alt="">
+                            <h2 class="fs-5  py-2">مغازه ی خودکشی</h2>
+                            <h4 class="fs-6"> ژان تولی </h4>
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/Book9.jpg" alt="">
+                            <h2 class="fs-5  py-2">شازده کوچولو</h2>
+                            <h4 class="fs-6">آنتوان دوسنت اگزوپه </h4>
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/book8.jpg" alt="">
+                            <h2 class="fs-5  py-2">مغازه ی خودکشی</h2>
+                            <h4 class="fs-6"> ژان تولی </h4>
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/Book11.jpg" alt="">
+                            <h2 class="fs-5  py-2"> خرس های پاندا</h2>
+                            <h4 class="fs-6">ویستا مادوکس </h4>
+
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/book8.jpg" alt="">
+                            <h2 class="fs-5  py-2">مغازه ی خودکشی</h2>
+                            <h4 class="fs-6"> ژان تولی </h4>
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/book13.jpg" alt="">
+                            <h2 class="fs-5  py-2"> سه روایت زندگی </h2>
+                            <h4 class="fs-6"> فرزانه سکویی </h4>
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/book8.jpg" alt="">
+                            <h2 class="fs-5  py-2">مغازه ی خودکشی</h2>
+                            <h4 class="fs-6"> ژان تولی </h4>
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/book15.jpg" alt="">
+                            <h2 class="fs-5  py-2"> خیابان وحشت </h2>
+                            <h4 class="fs-6"> دونی دونیونه </h4>
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/book16.jpg" alt="">
+                            <h2 class="fs-5 py-2"> پادشاه کوتوله </h2>
+                            <h4 class="fs-6"> مهدی کیمیایی </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="baner-section">
+        <div class="mobile-container container">
+            <div class="baner text-xl-center">
+                <a href="pages/book.html"><img src="./Images/baner/Baner4.webp" alt="maradonapic"></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="section2">
+        <div class="mobile-container container">
+            <div class="shopsslider">
+                <div class="container">
+                    <h3 class="fs-4 float-end">رمان و فلسفه</h3>
+                    <h4 id="moretext" class="fs-6"> <a href="#"> بیشتر</a></h4>
+                    <br>
+                    <div class="owl-carousel owl-theme">
+                        <div class="item py-2"> <img src="Images/book Cover/Book1.jpg" alt="">
+                            <h2 class="fs-5  py-2"> پدر پسر و عشق </h2>
+                            <h4 class="fs-6"> ریوانو تولی </h4>
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/Book2.jpg" alt="">
+                            <h2 class="fs-5  py-2">سقای آب و ادب </h2>
+                            <h4 class="fs-6">مهدی شجاعی</h4>
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/book3.jpg" alt="">
+                            <h2 class="fs-5  py-2"> شبهای روشن </h2>
+                            <h4 class="fs-6">داستایوفسکی</h4>
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/Book4.jpg" alt="">
+                            <h2 class="fs-5  py-2"> عادت های اتمی</h2>
+                            <h4 class="fs-6"> جیمز کلیر </h4>
+
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/book5.jpg" alt="">
+                            <h2 class="fs-5  py-2"> فردا مسافرم </h2>
+                            <h4 class="fs-6"> مریم راهی </h4>
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/book6.jpg" alt="">
+                            <h2 class="fs-5  py-2">صلحی که همه صلح ها را به باد داد</h2>
+                            <h4 class="fs-6">دیوید فرانکلین</h4>
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/book7.jpg" alt="">
+                            <h2 class="fs-5  py-2"> حافظه نامحدود </h2>
+                            <h4 class="fs-6"> کوین هرسلای </h4>
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/book12.jpg" alt="">
+                            <h2 class="fs-5  py-2"> پیکر زن </h2>
+                            <h4 class="fs-6"> دونی دونیونه </h4>
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/book9.jpg" alt="">
+                            <h2 class="fs-5 py-2"> پادشاه کوتوله </h2>
+                            <h4 class="fs-6"> مهدی کیمیایی </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <section id="section2">
+        <div class="mobile-container container">
+            <div class="shopsslider">
+                <div class="container">
+                    <h3 class="fs-4 float-end"> پادکست گرامافون </h3>
+                    <h4 id="moretext" class="fs-6"> <a href="#"> بیشتر</a></h4>
+                    <br>
+                    <div class="owl-carousel owl-theme">
+                        <div class="item py-2"> <img src="Images/book Cover/geramaphone/1.webp" alt="">
+                            <h2 class="fs-5  py-2">مم و زین</h2>
+                            <h4 class="fs-6">شرمین نادری</h4>
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/geramaphone/10.jpg" alt="">
+                            <h2 class="fs-5  py-2">لیدو زیبر</h2>
+                            <h4 class="fs-6">مهدی شجاعی</h4>
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/geramaphone/2.jpg" alt="">
+                            <h2 class="fs-5  py-2"> سیب و میخک کوب </h2>
+                            <h4 class="fs-6">داستایوفسکی</h4>
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/geramaphone/3.jpg" alt="">
+                            <h2 class="fs-5  py-2"> سارای و آیدین خان چوپان </h2>
+                            <h4 class="fs-6">شرمین نادری</h4>
+
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/geramaphone/4.jpg" alt="">
+                            <h2 class="fs-5  py-2"> شاماران </h2>
+                            <h4 class="fs-6">شرمین نادری </h4>
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/geramaphone/5.jpg" alt="">
+                            <h2 class="fs-5  py-2">مرغ حق</h2>
+                            <h4 class="fs-6">دیوید فرانکلین</h4>
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/geramaphone/6.jpg" alt="">
+                            <h2 class="fs-5  py-2"> رعنا </h2>
+                            <h4 class="fs-6">شرمین نادری </h4>
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/geramaphone/7.jpg" alt="">
+                            <h2 class="fs-5  py-2"> مردآزما </h2>
+                            <h4 class="fs-6">شرمین نادری </h4>
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/geramaphone/8.jpg" alt="">
+                            <h2 class="fs-5 py-2"> کوراوغلو </h2>
+                            <h4 class="fs-6">شرمین نادری </h4>
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/geramaphone/9.jpg" alt="">
+                            <h2 class="fs-5 py-2"> ام الداس </h2>
+                            <h4 class="fs-6">شرمین نادری </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="baner-section">
+        <div class="mobile-container container">
+            <div class="baner text-xl-center">
+                <a href="pages/book.html"><img src="./Images/baner/Baner3.webp" alt="maradonapic"></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="section2">
+        <div class="mobile-container container">
+            <div class="shopsslider">
+                <div class="container">
+                    <h3 class="fs-4 float-end"> استرینگ کست</h3>
+                    <h4 id="moretext" class="fs-6"> <a href="#"> بیشتر</a></h4>
+                    <br>
+                    <div class="owl-carousel owl-theme">
+                        <div class="item py-2"> <img src="Images/book Cover/cast/cast1.webp" alt="">
+                            <h2 class="fs-5  py-2">مم و زین</h2>
+                            <h4 class="fs-6">شرمین </h4>
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/cast/cast2.webp" alt="">
+                            <h2 class="fs-5  py-2">لیدو زیبر</h2>
+                            <h4 class="fs-6">مهدی شجاعی</h4>
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/cast/cast3.webp" alt="">
+                            <h2 class="fs-5  py-2"> سیب و میخک کوب </h2>
+                            <h4 class="fs-6">شماره نو و یک</h4>
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/cast/cast4.jpg" alt="">
+                            <h2 class="fs-5  py-2"> خان چوپان </h2>
+                            <h4 class="fs-6">شماره هشتاد </h4>
+
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/cast/cast4.webp" alt="">
+                            <h2 class="fs-5  py-2"> شاماران </h2>
+                            <h4 class="fs-6">شماره هفتاد و سه </h4>
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/cast/cast5.jpg" alt="">
+                            <h2 class="fs-5  py-2">مرغ حق</h2>
+                            <h4 class="fs-6">دیوید بی صبر</h4>
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/cast/cast6.webp" alt="">
+                            <h2 class="fs-5  py-2"> رعنا </h2>
+                            <h4 class="fs-6">شماره هشتاد و نه </h4>
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/cast/cast7.webp" alt="">
+                            <h2 class="fs-5  py-2"> مردآزما </h2>
+                            <h4 class="fs-6">شماره هشتاد و یک </h4>
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/cast/cast1.webp" alt="">
+                            <h2 class="fs-5 py-2"> کوراوغلو </h2>
+                            <h4 class="fs-6">شماره هشتاد و دو </h4>
+                        </div>
+                        <div class="item py-2"> <img src="Images/book Cover/cast/cast6.webp" alt="">
+                            <h2 class="fs-5 py-2"> ام الداس </h2>
+                            <h4 class="fs-6">شماره هشتاد و سه </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="mobile-container container">
+            <div class="footer d-flex flex-wrap ">
+                <div class="fisrt-footer d-flex flex-column ">
+                    <a href="./pages/shop.html" class="fs-4 pb-2 cryn">لینک های مفید</a>
+                    <a href="./pages/shop.html" class="fs-6 py-1">گواهینامه کتاب ها</a>
+                    <a href="./pages/aboutus.html" class="fs-6 py-1">رسالت ما</a>
+                    <a href="./pages/aboutus.html" class="fs-6 py-1">درباره ناشران</a>
+                    <a href="./pages/shop.html" class="fs-6 py-1">قوانین و مقررات</a>
+                </div>
+                <div class="second-footer d-flex flex-column">
+                    <a href="#" class="fs-4 pb-2 cryn">ژانر های تینا</a>
+                    <a href="#" class="fs-6 py-1">رمان و داستان</a>
+                    <a href="#" class="fs-6 py-1">تاریخ جهان</a>
+                    <a href="#" class="fs-6 py-1">علمی - آموزشی</a>
+                    <a href="#" class="fs-6 py-1">فلسفه و روانشناسی </a>
+                </div>
+                <div class="third-footer">
+                    <h2 class="fs-5 py-3 cryn">شبکه های اجتماعی</h2>
+                    <div class="social-logos d-flex align-items-center">
+                        <a href="#"><i class="fab fa-instagram p-2"></i></a>
+                        <a href="#"><i class="fab fa-facebook p-2"></i></a>
+                        <a href="#"><i class="fab fa-telegram p-2"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp p-2"></i></a>
+                    </div>
+                </div>
+                <div class="fourth-footer d-flex flex-column">
+                    <h2 class="fs-4 py-3 cryn">ارتباط با ما </h2>
+                    <div class="call-card d-flex flex-row p-0 justify-content-center ">
+                        <i class="fa fa-phone px-2"></i>
+                        <h2 class="fs-6">021 555 4646</h2>
+                    </div>
+                    <div class="call-card d-flex flex-row p-0 justify-content-center">
+                        <i class="fa fa-phone px-2"></i>
+                        <h2 class="fs-6">021 665 4646</h2>
+                    </div>
+                    <div class="call-card d-flex flex-row p-0 justify-content-center">
+                        <i class="fa fa-phone-square px-2"></i>
+                        <h2 class="fs-6">0912 245 6696</h2>
+                    </div>
+                </div>
+                <div class="fifth-footer d-flex flex-column flex-lg-row text-center pt-3 text-md-end ">
+                    <div
+                        class="foot-logo p-0 text-md-center text-lg-center justify-content-lg-center align-content-lg-center ">
+                        <a href="#"><img class="w-25 pt-3" src="Images/logo.svg" alt="tinas logo"></a>
+                    </div>
+                    <div class="mb-3 d-flex justify-content-center flex-column ">
+                        <label for="exampleInputEmail1" class="form-label">ایمیل خود را وارد کنید</label>
+                        <input type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="با سلام ، به نظر من ...">
+                        <div id="emailHelp" class="form-text">نظرات سازندتونو اینجا برای ما بفرستید</div>
+                    </div>
+                </div>
+            </div>
+            <div class="foot-sign text-center">
+                <h2 class="fs-6 p-2">طراحی و توسعه 2022</h2>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="bootstrap-5.0.2/js/bootstrap.min.js"></script>
+    <script src="./OwlCarousel/docs_src/assets/vendors/jquery.min.js"></script>
+    <script src="./OwlCarousel/dist/owl.carousel.js"></script>
+    <script src="./OwlCarousel/dist/owl.carousel.min.js"></script>
+    <script>
+
+        let slideIndex = 0;
+        showSlides();
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            autoplayHoverPause: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 2,
+                },
+                426: {
+                    items: 3,
+                },
+                768: {
+                    items: 4,
+                    nav: false
+                },
+                868: {
+                    items: 5,
+                }
+            },
+            autoplay: true,
+            autoplayTimeout: 2500,
+            autoplayHoverPause: true
+
+        });
+        $('.play').on('click', function () {
+            owl.trigger('play.owl.autoplay', [1000])
+        })
+        $('.stop').on('click', function () {
+            owl.trigger('stop.owl.autoplay')
+
+        })
+
+    </script>
+</body>
+
+</html>

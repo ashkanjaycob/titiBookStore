@@ -1,0 +1,522 @@
+/* Css reset files 2022 last version  */
+
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+ */
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+    all: unset;
+    display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a,
+button {
+    cursor: revert;
+}
+
+/* Remove list styles (bullets/numbers) */
+ol,
+ul,
+menu {
+    list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+    max-width: 100%;
+}
+
+/* removes spacing between cells in tables */
+table {
+    border-collapse: collapse;
+}
+
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+input,
+textarea {
+    -webkit-user-select: auto;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+    white-space: revert;
+}
+
+/* minimum style to allow to style meter element */
+meter {
+    -webkit-appearance: revert;
+    appearance: revert;
+}
+
+/* reset default text opacity of input placeholder */
+::placeholder {
+    color: unset;
+}
+
+/* fix the feature of 'hidden' attribute.
+   display:revert; revert to element instead of attribute */
+:where([hidden]) {
+    display: none;
+}
+
+/* revert for bug in Chromium browsers
+   - fix for the content editable attribute will work properly.
+   - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
+:where([contenteditable]:not([contenteditable="false"])) {
+    -moz-user-modify: read-write;
+    -webkit-user-modify: read-write;
+    overflow-wrap: break-word;
+    -webkit-line-break: after-white-space;
+    -webkit-user-select: auto;
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable="true"]) {
+    -webkit-user-drag: element;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+     -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+/* css reset codes 2022 end  */
+
+/* default css codes for all of project  */
+
+@font-face {
+    font-family: yekan;
+    src: url(../fonts/YekanBakhNew-Regular.woff2);
+}
+
+@font-face {
+    font-family: yekanbold;
+    src: url(../fonts/YekanBakhNew-ExtraBold.woff2);
+}
+
+@font-face {
+    font-family: kara;
+    src: url(../fonts/SGKara-Light.woff2);
+}
+
+.mobile-container {
+    padding: 0 12px;
+}
+
+.cryn {
+    color: #28C5CC !important;
+}
+
+
+.btn-T {
+    color: #fff !important;
+    font-family: kara;
+    background-color: #28c5cc !important;
+    /* opacity: 0.8; */
+    cursor: pointer;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 35px;
+}
+
+.btn-T:hover {
+    -webkit-box-shadow: 0 5px 6px -6px #777;
+    -moz-box-shadow: 0 5px 6px -6px #777;
+    box-shadow: 0 5px 6px -6px #777;
+    transition: 0.2s 0.1s;
+}
+
+/* header section css codes  */
+
+#header {
+    font-family: kara;
+    box-shadow: 0 4px 2px -4px gray;
+}
+
+/* navbar css codes  */
+
+.navbar div {
+    padding-bottom: 10px;
+}
+
+.firstnav {
+    order: 1;
+    width: 50%;
+}
+
+#login-text {
+    display: none;
+    transition: 0.2s;
+}
+
+.firstnav a {
+    color: rgb(99, 99, 99);
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.2s;
+}
+
+
+.secondnav {
+    order: 3;
+    width: 90%;
+}
+
+.secondnav input {
+    font-size: 0.9rem;
+    position: relative;
+    width: 100%;
+    font-family: yekan;
+    direction: rtl;
+    color: gray;
+    background-color: #52525218;
+    padding: 10px 8px;
+    border-radius: 10px;
+}
+
+.secondnav i {
+    font-size: 1rem;
+    position: absolute;
+    padding: 12px;
+}
+
+.thirdnav {
+    text-align: right;
+    width: 50%;
+    order: 2;
+}
+
+.fourthnav {
+    display: none;
+    order: 4;
+}
+
+.fifthnav {
+    width: 10%;
+    order: 5;
+    flex-grow: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.fifthnav i {
+    font-size: 1.2rem;
+    padding: 15px 8px 0;
+}
+
+#bars {
+    color: rgb(99, 99, 99);
+    background-color: transparent !important;
+    border: none;
+}
+
+#bars i {
+    font-size: 1.5rem;
+    padding: 6px;
+}
+
+.fifthnav ul {
+    display: none;
+}
+
+.fifthnav ul li {
+    float: right;
+}
+
+.fifthnav ul li a {
+    color: rgb(99, 99, 99);
+    padding: 0 8px;
+    transition: 0.2s;
+}
+
+.fifthnav ul li a:hover {
+    color: #28C5CC;
+}
+
+.firstnav a :hover,
+.firstnav a :active {
+    color: #28C5CC;
+}
+
+#login-text:hover {
+    color: #28C5CC;
+}
+
+#offcanvasExample::before {
+    backdrop-filter: blur(2px) contrast(0.6);
+    -webkit-backdrop-filter: blur(2px) contrast(0.6);
+}
+
+#offcanvasExample {
+    color: #ffffff;
+    font-family: kara;
+    background: rgba(255, 255, 255, 0.253);
+    backdrop-filter: blur(10px);
+    width: 50%;
+    border: none;
+}
+
+.mobile-menu-list a {
+    text-decoration: none !important;
+    color: white;
+    transition: 0.2s;
+}
+
+.mobile-menu-list a:focus {
+    text-decoration: none !important;
+    color: #82e5eb;
+}
+
+.modal-body h5 , .cnvs-menu {
+    font-size: 1rem;
+}
+#offcanvasExampleLabel {
+    font-size: 0.8rem !important;
+}
+
+/* slider section css codes  */
+
+#slider-section {
+    padding: 30px 0px;
+}
+
+.mySlides img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* shop slider css codes */
+
+.shopsslider {
+    font-family: yekan, kara;
+}
+
+.shopsslider a {
+    text-decoration: none;
+    color: #525252bb;
+}
+
+.shopsslider img {
+    border-radius: 16px;
+}
+
+.item {
+    text-align: center;
+}
+
+.item h2 {
+    width: 100%;
+}
+
+/* baner css codes  */
+
+.baner {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.baner img {
+    border-radius: 12px;
+    box-shadow: 4px 5PX 8px rgba(0, 0, 0, 0.295);
+}
+
+
+/* footer css codes  */
+
+footer {
+    background-color: #4d4d4d10;
+    border-radius: 12px;
+}
+
+.footer {
+    padding: 20px 0px;
+    font-family: kara;
+    direction: rtl;
+
+}
+
+.footer div {
+    width: 50%;
+    padding: 10px 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #3b3b3b;
+}
+
+.fifth-footer {
+    width: 100% !important;
+}
+
+.social-logos i {
+    font-size: 1.5rem;
+}
+
+.call-card {
+    font-family: Helvetica, sans-serif;
+    direction: ltr !important;
+    width: 100% !important;
+}
+
+.fifth-footer div {
+    width: 100% !important;
+}
+
+.foot-sign {
+    font-family: kara;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .about-us-cards {
+        flex-direction: row;
+    }
+    .book-shop-card-pay , .book-shop-card-text , .book-shop-card-pic  {
+        width: 30%;
+    }
+    .book-shop-card-pic img {
+        width: 80% !important;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .footer {
+        padding: 10px 20px;
+    }
+
+    .footer div {
+        width: 33.33%;
+        padding: 0px 8px;
+    }
+
+    .fifth-footer {
+        width: 65% !important;
+    }
+
+    #login-text {
+        display: block;
+        font-size: 1rem;
+    }
+
+    .firstnav {
+        width: 30%;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .firstnav a {
+
+        padding: 4px;
+    }
+
+    .secondnav {
+        order: 2;
+        width: 50%;
+    }
+
+    .thirdnav {
+        text-align: right;
+        width: 20%;
+        order: 3;
+    }
+
+    .fourthnav {
+        display: block;
+        order: 4;
+    }
+
+    .fifthnav ul {
+        display: block;
+    }
+
+    .fifthnav a {
+        text-decoration: none;
+        color: #3b3b3b;
+    }
+
+    #bars {
+        display: none;
+    }
+    .book-shop-card-pic img {
+        width: 80% !important;
+    }
+    }
+
+
+
+
+
+    /* Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+        .container {
+            margin: 0 auto;
+        }
+
+        .firstnav a {
+            padding: 0px 10px;
+        }
+
+        .firstnav i {
+            font-size: 1.6rem;
+        }
+
+        .footer div {
+            width: 25%;
+            padding: 0px 8px;
+        }
+
+        .fifth-footer {
+            width: 100% !important;
+        }
+
+        .fifth-footer input {
+            width: 50%;
+        }
+
+        .foot-logo img {
+            width: 50% !important;
+        }
+
+        .third-footer i {
+            font-size: 1.9rem;
+        }
+    }
+
+    .typed-cursor {
+        color: transparent;
+        font-weight: bolder;
+    }

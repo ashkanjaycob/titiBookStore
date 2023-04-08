@@ -1,0 +1,142 @@
+.book-shop-card-pay {
+    background: rgba(155, 155, 155, 0.253);
+    font-size: 0.9rem;
+    justify-content: center;
+    align-items: center;
+    font-family: kara, yekan;
+}
+
+#book-price {
+    color: #28C5CC ;
+    direction: rtl;
+    font-family: kara , yekan;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.book-shop-card-text {
+    direction: rtl;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    justify-content: center;
+    align-items: center;
+    font-family: kara, yekan;
+}
+.book-shop-card-text h2 {
+    font-family: yekan, kara;
+    font-size: 1.4rem;
+}
+
+.book-shop-card-text h3 {
+    font-family: yekan, kara;
+    font-size: 1rem;
+}
+
+.book-shop-card-text p {
+    font-family: yekan, kara;
+    /* font-size: 0.8rem; */
+}
+
+.book-shop-off {
+    font-family: kara , yekan;
+    padding: 12px;
+    text-align: center;
+    background-color: #ffcd63;
+    direction: rtl;
+}
+
+.book-shop-off i {
+    padding: 10px;
+    color: red;
+}
+
+.book-shop-info {
+    font-family: kara , yekan;
+    text-align: justify;
+    direction: rtl;
+}
+.book-shop-info p {
+    font-size: 0.8rem;
+}
+
+.continue-button {
+    color: gray;
+}
+
+.book-shop-specifics {
+    background: rgba(155, 155, 155, 0.253);
+}
+
+.spesefics-icons span {
+    font-family: kara, yekan;
+    color: rgba(82, 82, 82, 0.603);
+}
+.spesefics-icons i {
+    font-size: 1rem;
+    color: rgba(82, 82, 82, 0.685);
+}
+
+.white-divider {
+    background-color: white;
+}
+
+.book-shop-comments {
+    background: rgba(155, 155, 155, 0.253);
+}
+
+.comments {
+    font-family: kara , yekan ;
+    text-align: center;
+}
+
+.comments input {
+    font-size: 0.9rem;
+    position: relative;
+    width: 300px;
+    font-family: yekan;
+    direction: rtl;
+    color: gray;
+    background-color: #52525218;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+
+.brd-bg {
+    background-color: rgba(82, 82, 82, 0.075);
+}
+
+.comment-written {
+    direction: rtl;
+    display: felx;
+    flex-direction: column ;
+    border-bottom: dashed 1px gray;
+}
+
+.comment-written  h5 {
+    font-size: 0.9rem;
+}
+.comment-written  h6 {
+    font-size: 0.7rem;
+}
+.comment-written i {
+    font-size: 1rem;
+    color: #28C5CC;
+    justify-self: center;
+    padding: 0 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

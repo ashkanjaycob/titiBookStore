@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../OwlCarousel/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="../OwlCarousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../bootstrap-5.0.2/css/bootstrap.css">
+    <link rel="stylesheet" href="../style/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/shop.css">
+
+    <title>shopping</title>
+
+</head>
+
+<body class="container-sm">
+    <header id="header">
+
+        <div class="mobile-container container">
+            <nav class="navbar gr d-flex mt-3">
+                <div class="firstnav">
+                    <a href="#" id="login-text" type="button" class="btn" data-bs-toggle="modal"
+                        data-bs-target="#loginmodal">ورود و ثبت نام</a>
+                    <!-- first nav modals  -->
+                    <!-- Modal -->
+                    <div class="modal fade pt-2 pt-md-5" id="loginmodal" tabindex="-1" aria-labelledby="loginModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title"> <i class="fa fa-user-circle btn-outline-warning fs-2"></i>
+                                        فرم ثبت نام و ورود به
+                                        حساب کاربری</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="modal-body">
+                                        <h5 class="fs-5">لطفا نام و نام خانوادگی خود را وارد نمایید</h5>
+                                        <div class="input-group mb-3 input-modal-bg">
+                                            <input type="text" class="form-control" placeholder="مثلا علی علوی ..."
+                                                aria-label="Username" aria-describedby="basic-addon1">
+                                        </div>
+                                        <h5>لطفا شماره تلفن خود را وارد کنید</h5>
+                                        <input type="number" class="form-control" placeholder="مثلا 5656 654 0912"
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                        <br>
+                                        <button type="button" class="btn btn-outline-warning px-5">ثبت نام </button>
+                                        <hr>
+                                        <h5>حساب کاربری ندارید ؟ <button type="button" class="btn btn-outline-warning"
+                                                data-bs-dismiss="modal">اینجا</button> کلیک کنید </h5>
+
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline-light"
+                                        data-bs-dismiss="modal">بستن</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--login modal finishes  -->
+                    <a href="#"><i class="fa fa-user" data-bs-toggle="modal" data-bs-target="#loginmodal"
+                            title="حساب کاربری"></i></a>
+                    <a href="#"><i class="fa fa-shopping-basket" title="سبد خرید "></i></a>
+                    <a href="#"><i class="fa fa-gift" title=" کد تخفیف"></i></a>
+                </div>
+                <div class="secondnav">
+                    <i class="fa fa-magnifying-glass"></i>
+                    <input type="text" placeholder="جست و جوی کتاب صوتی ، پادکست ، نویسنده">
+
+                </div>
+                <div class="thirdnav">
+                    <a href="../index.html"><img src="../Images/logo.svg" alt="لوگوی وبسایت">
+                </div></a>
+                <div class="fourthnav">
+                    <button type="submit" class="btn-T ">دانلود کاتالوگ</button>
+                </div>
+                <div class="fifthnav">
+                    <a id="bars" href="#" class="btn btn-light p-0" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"><i
+                            class="fa fa-bars"></i></a>
+                    <ul>
+                        <li><a href="../index.html"><i class="fa fa-home"></i>خانه</a></li>
+                        <li><a href="shop.html"><i class="fa fa-book"></i>کتاب الکترونیکی</a></li>
+                        <li><a href="podcast.html"><i class="fa fa-microphone"></i>پادکست</a></li>
+                        <li><a href="aboutus.html"><i class="fa fa-newspaper"></i>رسالت ما</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- bars offcanvas menu mobile  -->
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title fs-6 p-1" id="offcanvasExampleLabel">کتاب ‌بهترین دوست توست</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="mobile-menu-list text-end d-flex flex-column justify-content-center ">
+                    <ul>
+                        <li class="p-2"><a href="../index.html" class="fs-4">خانه</a></li>
+                        <li class="p-2"><a href="shop.html" class="fs-4">کتاب الکترونیکی</a></li>
+                        <li class="p-2"><a href="podcast.html" class="fs-4">پادکست</a></li>
+                        <li class="p-2"><a href="aboutus.html" class="fs-4">رسالت ما</a></li>
+                        <li class="p-2"><a href="#" class="fs-4">گالری تصاویر</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- bars offcanvas  -->
+
+    </header>
+
+    <section id="filters" class="p-3 d-flex jus justify-content-around d-md-none">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-light btn-outline-secondary filter-btn " data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop">
+            مرتب سازی / پیشنهاد ما
+        </button>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-light btn-outline-secondary filter-btn " data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop2">
+            جست و جوی پیشرفته
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center" id="staticBackdropLabel"> مرتب سازی بر اساس </h5>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-group">
+                            <li class="list-group-item" id="list-gi-sort">
+                                <input class="form-check-input me-1 p-2" type="checkbox" value="" aria-label="...">
+                                پر فروش ترین ها
+                            </li>
+                            <li class="list-group-item" id="list-gi-sort">
+                                <input class="form-check-input me-1 p-2" type="checkbox" value="" aria-label="...">
+                                ارزان ترین ها
+                            </li>
+                            <li class="list-group-item" id="list-gi-sort">
+                                <input class="form-check-input me-1 p-2" type="checkbox" value="" aria-label="...">
+                                کم حجم ترین ها
+                            </li>
+                            <li class="list-group-item" id="list-gi-sort">
+                                <input class="form-check-input me-1 p-2" type="checkbox" value="" aria-label="...">
+                                پر بیننده ترین ها
+                            </li>
+                            <li class="list-group-item" id="list-gi-sort">
+                                <input class="form-check-input me-1 p-2" type="checkbox" value="" aria-label="...">
+                                گران ترین ها
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-T">جست و جو</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">پیشرفته جستو جو کن</h5>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                        ...
+                        ...
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-T ">جست و جو </button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">بستن</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="breadcrump-navigation container col-12">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb py-md-2">
+                <li class="breadcrumb-item  px-2"><a href="#">رمان و فلسفه</a></li>
+                <li class="breadcrumb-item  active" aria-current="page">ترسناک</li>
+            </ol>
+        </nav>
+    </section>
+
+
+    <!-- shoping section codes  -->
+
+    <section id="shop-content" class=" p-3 row">
+        <!-- content of shopping section  -->
+        <div class="shop-main-content p-3 col-md-9 ">
+            <!-- top texts of any shop section  -->
+            <div class="shop-main-text">
+                <div class="card">
+                    <div class="card-header fs-2">
+                        رمان و فلسفه
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text fs-6">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+                            استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم
+                            است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                            می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را
+                            می طلبد.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- shop sections sliders for books  -->
+            <div class="shop-main-slider row py-3 justify-content-between">
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 p-3 p-3 ">
+                    <div class="item-image">
+                        <img class="img-responsive book-cover-image lazy" width="200"
+                            src="../Images/book Cover/book8.jpg" alt="کتاب صوتی گرامافون" />
+                        </a>
+                    </div>
+                    <span class="title-book"> <a title="کتاب صوتی گرامافون قصه‌ی مینا و پلنگ" id="book_121545"
+                            href="#"></a>
+                        قصه‌ی مینا و پلنگ </a>
+                    </span>
+                    <div class="author-names">
+                        <span class="author">شرمین نادری</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6  p-3">
+                    <div class="item-image">
+                        <img class="img-responsive book-cover-image lazy" width="200"
+                            src="../Images/book Cover/book9.jpg" alt="کتاب صوتی گرامافون" />
+                        </a>
+                    </div>
+                    <span class="title-book"> <a title="کتاب صوتی گرامافون قصه‌ی مینا و پلنگ" id="book_121545" href="#">
+                            قصه‌ی مینا و پلنگ </a>
+                    </span>
+                    <div class="author-names">
+                        <span class="author">شرمین نادری</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6  p-3">
+                    <div class="item-image">
+                        <img class="img-responsive book-cover-image lazy" width="200"
+                            src="../Images/book Cover/book5.jpg" alt="کتاب صوتی گرامافون" />
+                        </a>
+                    </div>
+                    <span class="title-book"> <a title="کتاب صوتی گرامافون قصه‌ی مینا و پلنگ" id="book_121545" href="#">
+                            قصه‌ی مینا و پلنگ </a>
+                    </span>
+                    <div class="author-names">
+                        <span class="author">شرمین نادری</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6  p-3">
+                    <div class="item-image">
+                        <img class="img-responsive book-cover-image lazy" width="200"
+                            src="../Images/book Cover/book6.jpg" alt="کتاب صوتی گرامافون" />
+                        </a>
+                    </div>
+                    <span class="title-book"> <a title="کتاب صوتی گرامافون قصه‌ی مینا و پلنگ" id="book_121545" href="#">
+                            قصه‌ی مینا و پلنگ </a>
+                    </span>
+                    <div class="author-names">
+                        <span class="author">شرمین نادری</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6  p-3">
+                    <div class="item-image">
+                        <img class="img-responsive book-cover-image lazy" width="200"
+                            src="../Images/book Cover/book7.jpg" alt="کتاب صوتی گرامافون" />
+                        </a>
+                    </div>
+                    <span class="title-book"> <a title="کتاب صوتی گرامافون قصه‌ی مینا و پلنگ" id="book_121545" href="#">
+                            قصه‌ی مینا و پلنگ </a>
+                    </span>
+                    <div class="author-names">
+                        <span class="author">شرمین نادری</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6  p-3">
+                    <div class="item-image">
+                        <img class="img-responsive book-cover-image lazy" width="200"
+                            src="../Images/book Cover/book2.jpg" alt="کتاب صوتی گرامافون" />
+                        </a>
+                    </div>
+                    <span class="title-book"> <a title="کتاب صوتی گرامافون قصه‌ی مینا و پلنگ" id="book_121545" href="#">
+                            قصه‌ی مینا و پلنگ </a>
+                    </span>
+                    <div class="author-names">
+                        <span class="author">شرمین نادری</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6  p-3">
+                    <div class="item-image">
+                        <img class="img-responsive book-cover-image lazy" width="200"
+                            src="../Images/book Cover/book3.jpg" alt="کتاب صوتی گرامافون" />
+                        </a>
+                    </div>
+                    <span class="title-book"> <a title="کتاب صوتی گرامافون قصه‌ی مینا و پلنگ" id="book_121545" href="#">
+                            قصه‌ی مینا و پلنگ </a>
+                    </span>
+                    <div class="author-names">
+                        <span class="author">شرمین نادری</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 p-3">
+                    <div class="item-image">
+                        <img class="img-responsive book-cover-image lazy" width="200"
+                            src="../Images/book Cover/book10.jpg" alt="کتاب صوتی گرامافون" />
+                        </a>
+                    </div>
+                    <span class="title-book"> <a title="کتاب صوتی گرامافون قصه‌ی مینا و پلنگ" id="book_121545" href="#">
+                            قصه‌ی مینا و پلنگ </a>
+                    </span>
+                    <div class="author-names">
+                        <span class="author">شرمین نادری</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 p-3 p-3 ">
+                    <div class="item-image">
+                        <img class="img-responsive book-cover-image lazy" width="200"
+                            src="../Images/book Cover/book8.jpg" alt="کتاب صوتی گرامافون" />
+                        </a>
+                    </div>
+                    <span class="title-book"> <a title="کتاب صوتی گرامافون قصه‌ی مینا و پلنگ" id="book_121545"
+                            href="#"></a>
+                        قصه‌ی مینا و پلنگ </a>
+                    </span>
+                    <div class="author-names">
+                        <span class="author">شرمین نادری</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6  p-3">
+                    <div class="item-image">
+                        <img class="img-responsive book-cover-image lazy" width="200"
+                            src="../Images/book Cover/book9.jpg" alt="کتاب صوتی گرامافون" />
+                        </a>
+                    </div>
+                    <span class="title-book"> <a title="کتاب صوتی گرامافون قصه‌ی مینا و پلنگ" id="book_121545" href="#">
+                            قصه‌ی مینا و پلنگ </a>
+                    </span>
+                    <div class="author-names">
+                        <span class="author">شرمین نادری</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6  p-3">
+                    <div class="item-image">
+                        <img class="img-responsive book-cover-image lazy" width="200"
+                            src="../Images/book Cover/book5.jpg" alt="کتاب صوتی گرامافون" />
+                        </a>
+                    </div>
+                    <span class="title-book"> <a title="کتاب صوتی گرامافون قصه‌ی مینا و پلنگ" id="book_121545" href="#">
+                            قصه‌ی مینا و پلنگ </a>
+                    </span>
+                    <div class="author-names">
+                        <span class="author">شرمین نادری</span>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- pagination codes  -->
+
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">قبلی</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">بعدی</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- side filters for shop any book  -->
+
+        <div class="shop-side-content d-md-block  col-md-3">
+
+            <div class="list-group py-2">
+                <button type="button" class="list-group-item button-sh-slider list-group-item-action active"
+                    aria-current="true">
+                    دسته بندی نتایج
+                </button>
+                <button type="button" class="list-group-item list-group-item-action">داستان و رمان</button>
+                <button type="button" class="list-group-item list-group-item-action">داستان کوتاه</button>
+                <button type="button" class="list-group-item list-group-item-action" disabled>
+                    عامیانه</button>
+            </div>
+
+            <div class="list-group py-3">
+                <button type="button" class="list-group-item button-sh-slider list-group-item-action active "
+                    aria-current="true">
+                    جست و جو در نتایج
+                </button>
+                <input type="text" class="form-control" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm" placeholder="جست و جوی زنده ...">
+            </div>
+
+            <div class="list-group py-3">
+                <button type="button" class="list-group-item button-sh-slider list-group-item-action active "
+                    aria-current="true">
+                    ناشران </button>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        عصر نوین
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        ققنوس
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        کلاغ سفید
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        نوآوران پیک
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        همیشه سبز
+                    </li>
+                </ul>
+            </div>
+
+            <div class="list-group py-3">
+                <button type="button" class="list-group-item button-sh-slider list-group-item-action active "
+                    aria-current="true">
+                    نویسنده ، مترجم و گوینده </button>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        عصر نوین
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        ققنوس
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        کلاغ سفید
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        نوآوران پیک
+                    </li>
+                    <li class="list-group-item">
+                        <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
+                        همیشه سبز
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+
+
+    </section>
+
+    <footer>
+        <div class="mobile-container container">
+            <div class="footer d-flex flex-wrap ">
+                <div class="fisrt-footer d-flex flex-column ">
+                    <a href="#" class="fs-4 pb-2 cryn">لینک های مفید</a>
+                    <a href="#" class="fs-6 py-1">گواهینامه کتاب ها</a>
+                    <a href="#" class="fs-6 py-1">رسالت ما</a>
+                    <a href="#" class="fs-6 py-1">درباره ناشران</a>
+                    <a href="#" class="fs-6 py-1">قوانین و مقررات</a>
+                </div>
+                <div class="second-footer d-flex flex-column">
+                    <a href="#" class="fs-4 pb-2 cryn">ژانر های تینا</a>
+                    <a href="#" class="fs-6 py-1">رمان و داستان</a>
+                    <a href="#" class="fs-6 py-1">تاریخ جهان</a>
+                    <a href="#" class="fs-6 py-1">علمی - آموزشی</a>
+                    <a href="#" class="fs-6 py-1">فلسفه و روانشناسی </a>
+                </div>
+                <div class="third-footer">
+                    <h2 class="fs-5 py-3 cryn">شبکه های اجتماعی</h2>
+                    <div class="social-logos d-flex align-items-center">
+                        <a href="#"><i class="fab fa-instagram p-2"></i></a>
+                        <a href="#"><i class="fab fa-facebook p-2"></i></a>
+                        <a href="#"><i class="fab fa-telegram p-2"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp p-2"></i></a>
+                    </div>
+                </div>
+                <div class="fourth-footer d-flex flex-column">
+                    <h2 class="fs-4 py-3 cryn">ارتباط با ما </h2>
+                    <div class="call-card d-flex flex-row p-0 justify-content-center ">
+                        <i class="fa fa-phone px-2"></i>
+                        <h2 class="fs-6">021 555 4646</h2>
+                    </div>
+                    <div class="call-card d-flex flex-row p-0 justify-content-center">
+                        <i class="fa fa-phone px-2"></i>
+                        <h2 class="fs-6">021 665 4646</h2>
+                    </div>
+                    <div class="call-card d-flex flex-row p-0 justify-content-center">
+                        <i class="fa fa-phone-square px-2"></i>
+                        <h2 class="fs-6">0912 245 6696</h2>
+                    </div>
+                </div>
+                <div class="fifth-footer d-flex flex-column flex-lg-row text-center pt-3 text-md-end ">
+                    <div
+                        class="foot-logo p-0 text-md-center text-lg-center justify-content-lg-center align-content-lg-center ">
+                        <a href="#"><img class="w-25 pt-3" src="../Images/logo.svg" alt="tinas logo"></a>
+                    </div>
+                    <div class="mb-3 d-flex justify-content-center flex-column ">
+                        <label for="exampleInputEmail1" class="form-label">ایمیل خود را وارد کنید</label>
+                        <input type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="با سلام ، به نظر من ...">
+                        <div id="emailHelp" class="form-text">نظرات سازندتونو اینجا برای ما بفرستید</div>
+                    </div>
+                </div>
+            </div>
+            <div class="foot-sign text-center">
+                <h2 class="fs-6 p-2">طراحی و توسعه 2022</h2>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="../bootstrap-5.0.2/js/bootstrap.min.js"></script>
+    <script src="../OwlCarousel/docs_src/assets/vendors/jquery.min.js"></script>
+    <script src="../OwlCarousel/dist/owl.carousel.js"></script>
+    <script src="../OwlCarousel/dist/owl.carousel.min.js"></script>
+    <script>
+
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            autoplayHoverPause: true,
+            margin: 10,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 2,
+                },
+                426: {
+                    items: 3,
+                },
+                768: {
+                    items: 4,
+                    nav: false
+                },
+                868: {
+                    items: 5,
+                }
+            },
+            autoplay: true,
+            autoplayTimeout: 2500,
+            autoplayHoverPause: true
+
+        });
+        $('.play').on('click', function () {
+            owl.trigger('play.owl.autoplay', [1000])
+        })
+        $('.stop').on('click', function () {
+            owl.trigger('stop.owl.autoplay')
+
+        })
+
+    </script>
+</body>
+
+</html>
